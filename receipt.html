@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Booking Receipt</title>
+<link rel="stylesheet" href="receipt.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Booking Receipt</h2>
+  <div id="receiptDetails"></div>
+</div>
+
+<script>
+  // Retrieve booking details from localStorage
+  var bookingDetails = JSON.parse(localStorage.getItem('bookingDetails'));
+
+  // Check if booking details exist
+  if (bookingDetails) {
+    // Generate HTML to display booking details
+    var receiptHTML = `
+      <p><strong>Name:</strong> ${bookingDetails.name}</p>
+      <p><strong>Mobile No:</strong> ${bookingDetails.mobile}</p>
+      <p><strong>Email:</strong> ${bookingDetails.email}</p>
+      <p><strong>Selected Car:</strong> ${bookingDetails.car}</p>
+      <p><strong>Address:</strong> ${bookingDetails.address}</p>
+      <p><strong>Pick Up Date:</strong> ${bookingDetails.pickup}</p>
+      <p><strong>Return Date:</strong> ${bookingDetails.returnDate}</p>
+      <p><strong>License Number:</strong> ${bookingDetails.licenseNo}</p>
+      <p><strong>Aadhaar Number:</strong> ${bookingDetails.aadhaarNo}</p>
+      <p><strong>Rental Period (in days):</strong> ${bookingDetails.rentalPeriod}</p>
+      <p><strong>Total Cost:</strong> RS ${bookingDetails.totalCost.toFixed(2)}</p>
+    `;
+
+    // Display the generated HTML on the receiptDetails div
+    document.getElementById('receiptDetails').innerHTML = receiptHTML;
+  } else {
+    // Display a message if no booking details are found
+    document.getElementById('receiptDetails').innerHTML = "<p>No booking details found.</p>";
+  }
+</script>
+
+</body>
+</html>

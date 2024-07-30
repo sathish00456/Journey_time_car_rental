@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="car.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    .car-list {
+    list-style: none;
+    padding: 0;
+}
+
+
+    /* Style for the search button */
+    #search-button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    /* Change background color on hover */
+    #search-button:hover {
+        background-color: #45a049;
+    }
+
+.car-list li {
+    margin-bottom: 20px;
+}
+
+.car-image {
+    width: 34px; /* Set your desired width for the images */
+    height:34px;
+}
+
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#"><img src="logo1.jpeg"></a>
+            </div>
+            <input type="checkbox" id="click">
+            <label for="click" class="mainicon">
+                <div class="menu">
+                    <i class="bi bi-list"></i>
+                </div>
+            </label>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="vsc.html">rental car</a></li>
+                <li><a href="another.php">my booking</a></li>
+                <li><a href="jaya.html">services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">about us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        
+    </nav>
+
+    <div class="home">
+        <div class="main-sec">
+            <div class="left">
+                <p class="txt1">Easy And Fast Way To <span style="color: #0043ff8c;">Rent</span> our Car</p>
+                <p>Our streamlined rental process ensures a hassle-free experience from start to finish. With just a few clicks or 
+                    a quick phone call, you can reserve the perfect vehicle for your needs.</p>
+                <div class="btn">
+                   <a href="vsc.html"> <input class="car" type="button" value="Rent Car"></a>
+                </div>
+            </div>
+
+            <div class="right">
+                <img src="se.png" width="100%"  alt="">
+            </div>
+        </div>
+    </div>
+
+    <section class="loc-sec">
+        <div class="main-sec">
+            <div class="pick">
+                <label for="location">Pick Up Location</label>
+                <p><i class="fa-solid fa-location-dot"><input type="text" placeholder="pick up location"></i> </p>
+            </div>
+    
+            <div class="pick">
+
+                <label for="location">Drop Location</label>
+                <p><i class="fa-solid fa-location-dot"><input type="text" placeholder="Drop location"></i> </p>
+            
+            </div>
+    
+            <div class="pick">
+                <label for="pick-up-date">Pick Up Date</label>
+                <input type="date" id="pick-up-date">
+            </div>
+            
+            <div class="pick">
+                <label for="return-date">Return Date</label>
+                <input type="date" id="return-date">
+            </div>
+            
+            <div class="pick1">
+                <button id="search-button">Search Car</button>
+            </div>
+            
+            <div id="search-results"></div>
+           
+        </div>
+    </section>
+    
+    <section class="car-sec">
+        <div class="txt">
+            <p class="txt1">Latest <span>Inventory</span></p>
+            <p class="txt2"> To find the latest reviews for a particular rental service. </p>
+        </div>
+
+        <div class="main-sec">
+            <div class="box">
+                <img style="width: 365px;"
+                    src="c1.jpg"
+                    alt="">
+                <div class="details">
+
+                    <p class="car-name">MARUTI SUZUKI SWIFT</p>
+
+                    <div class="review">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <p>( 10k Reviews )</p>
+                    </div>
+
+                    <div class="feature">
+                        <p><i class="fa-solid fa-chair"></i> 4 Seat</p>
+                        <p><i class="fa-solid fa-gas-pump"></i> Diesel</p>
+                        <p><i class="fa-solid fa-car-battery"></i> 400Amps</p>
+                        <p><i class="fa-solid fa-person"></i> 4 peoples</p>
+                        <p><i class="fa-solid fa-neuter"></i> Manual</p>
+                        <p><i class="fa-solid fa-wifi"></i> free wifi </p>
+                    </div>
+
+                    <div class="price">
+                        <p>Rs:6000</p>
+                       <a href="pic1.html"> <button>Book Now</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img style="width: 365px;"
+                    src="c2.jpg"
+                    alt="">
+                <div class="details">
+
+                    <p class="car-name">MAHINDRA THAR</p>
+
+                    <div class="review">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <p>( 10k Reviews )</p>
+                    </div>
+
+                    <div class="feature">
+                        <p><i class="fa-solid fa-chair"></i> 5 Seat</p>
+                        <p><i class="fa-solid fa-gas-pump"></i> Diesel</p>
+                        <p><i class="fa-solid fa-car-battery"></i> 500Amps</p>
+                        <p><i class="fa-solid fa-person"></i></i> 5 peoples</p>
+                        <p><i class="fa-solid fa-neuter"></i> Manual</p>
+                        <p><i class="fa-solid fa-wifi"></i> free wifi </p>
+                    </div>
+
+                    <div class="price">
+                        <p>Rs:8000</p>
+                       <a href="pic3.html"> <button>Book Now</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img style="width: 365px;"
+                    src="c3.jpg"
+                    alt="">
+                <div class="details">
+
+                    <p class="car-name">MARUTI SUZUKI FRONX</p>
+
+                    <div class="review">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <p>( 10k Reviews )</p>
+                    </div>
+
+                    <div class="feature">
+                        <p><i class="fa-solid fa-chair"></i> 6 Seat</p>
+                        <p><i class="fa-solid fa-gas-pump"></i>petrol</p><br>
+                        <p><i class="fa-solid fa-car-battery"></i> 450Amps</p>
+                        <p><i class="fa-solid fa-person"></i></i> 6 peoples</p>
+                        <p><i class="fa-solid fa-neuter"></i> Manual</p>
+                        <p><i class="fa-solid fa-wifi"></i> free wifi </p>
+
+                    </div>
+
+                    <div class="price">
+                        <p>Rs:7000</p>
+                        <a href="pic2.html"><button>Book Now</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img style="width: 365px;"
+                    src="c4.jpg"
+                    alt="">
+                <div class="details">
+
+                    <p class="car-name">MARUTI SUZUKI JIMMT</p>
+
+                    <div class="review">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <p>( 10k Reviews )</p>
+                    </div>
+
+                    <div class="feature">
+                        <p><i class="fa-solid fa-chair"></i> 4 Seat</p>
+                        <p><i class="fa-solid fa-gas-pump"></i>  petrol</p><br>
+                        <p><i class="fa-solid fa-car-battery"></i>  500Amps</p>
+                        <p><i class="fa-solid fa-person"></i></i> 4 peoples</p>
+                        <p><i class="fa-solid fa-neuter"></i> Manual (AMT)</p>
+                        <p><i class="fa-solid fa-wifi"></i> free wifi </p>
+                    </div>
+
+                    <div class="price">
+                        <p>Rs:8000</p>
+                      <a href="p4.html">  <button>Book Now</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img style="width: 365px;"
+                    src="c5.jpg"
+                    alt="">
+                <div class="details">
+
+                    <p class="car-name">RENAULT KWID</p>
+
+                    <div class="review">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <p>( 10k Reviews )</p>
+                    </div>
+
+                    <div class="feature">
+                        <p><i class="fa-solid fa-chair"></i> 5 Seat</p>
+                        <p><i class="fa-solid fa-gas-pump"></i> petrol</p> <br>
+                        <p><i class="fa-solid fa-car-battery"></i>500Amps</p>
+                        <p><i class="fa-solid fa-person"></i></i> 5 peoples</p>
+                        <p><i class="fa-solid fa-neuter"></i> Manual</p>
+                        <p><i class="fa-solid fa-wifi"></i> free wifi </p>
+                    </div>
+
+                    <div class="price">
+                        <p>Rs:6500</p>
+                     <a href="pic4.html"><button>Book Now</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img style="width: 365px;"
+                    src="c6.jpg"
+                    alt="">
+                <div class="details">
+
+                    <p class="car-name">HYUNDAI CRETA</p>
+
+                    <div class="review">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <p>( 10k Reviews )</p>
+                    </div>
+
+                    <div class="feature">
+                        <p><i class="fa-solid fa-chair"></i> 5 Seat</p>
+                        <p><i class="fa-solid fa-gas-pump"></i> Desiel</p>
+                        <p><i class="fa-solid fa-car-battery"></i> 500Amps</p>
+                        <p><i class="fa-solid fa-person"></i></i> 5 peoples</p>
+                        <p><i class="fa-solid fa-neuter"></i> Manual</p>
+                        <p><i class="fa-solid fa-wifi"></i> free wifi </p>
+                    </div>
+
+                    <div class="price">
+                        <p>Rs:7000</p>
+                        <a href="pic5.html"><button>Book Now</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="btn">
+               <a href="vsc.html"> <input type="button" value="View All"></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="support-sec">
+        <div class="txt">
+            <p class="txt1">Why <span>Choose</span> Us</p>
+            <p> customize this description to highlight specific features, benefits, or unique selling points of your rental service.</p>
+        </div>
+
+        <div class="main-sec">
+            <div class="box">
+                <i class="fa-solid fa-phone"></i>
+                <div class="txt-sec">
+                    <p class="txt1">24 Hour Support</p>
+                    <p>In car rental, 24-hour support means that 
+                        help is available all day and night. This is good for both the people renting the cars and the company renting them out..</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-flag-checkered"></i>
+                <div class="txt-sec">
+                    <p class="txt1">Lowest Price</p>
+                    <p>Finding the lowest price for renting a car means looking for the cheapest deal.
+                         You can do this by comparing prices from different car rental companies online.</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-certificate"></i>
+                <div class="txt-sec">
+                    <p class="txt1">Verified License</p>
+                    <p>In the case of driver's licenses, verification may involve checking with the appropriate
+                         government agency to confirm that the license is valid and in good standing.</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fa-regular fa-circle-xmark"></i>
+                <div class="txt-sec">
+                    <p class="txt1">Free Cancelation</p>
+                    <p>
+                        "Free cancellation" means you can cancel your booking without any extra charges.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="achie-sec">
+        <div class="txt">
+            <p class="txt1">Feature <span>Achievement</span></p>
+            <p> Ensuring seamless experiences and customer satisfaction through efficient service and a wide range of vehicle options.</p>
+        </div>
+
+        <div class="main-sec">
+            <div class="box">
+                <p class="txt1">4000+</p>
+                <p>Active Member</p>
+            </div>
+
+            <div class="box">
+                <p class="txt1">3000+</p>
+                <p>Car Color</p>
+            </div>
+
+            <div class="box">
+                <p class="txt1">6000+</p>
+                <p>Car Model</p>
+            </div>
+
+            <div class="box">
+                <p class="txt1">10k</p>
+                <p>Positive Rating</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="start-sec">
+        <div class="main-sec">
+            <div class="left">
+                <p class="txt1">Ready To Get Start?</p>
+                <p class="txt2">Rental Services for all your travel needs! Whether you're planning a weekend getaway, a business trip, or a family vacation, we've got you covered.</p>
+                <div class="btn">
+                   <a href="contact.html"> <button>Contact Us</button></a>
+                </div>
+            </div>
+
+
+            <div class="right">
+                <img src="ba.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <footer class="foot-sec">
+        <div class="logo">
+            <h1>Developer SSK</h1>
+        </div>
+
+        <div class="copy">
+            <p>Copyright &copy; 2024 Design By Developer SSK</p>
+        </div>
+
+        <div class="item">
+            <!--<a href="/">Website Terms</a>
+            <a href="/">Contact Us</a>
+            <a href="/">Privacy Policy</a> -->
+            <a href="https://www.instagram.com/_sathish_kumar_004?igsh=MzRlODBiNWFlZA=="><i class="fa-brands fa-instagram" style="color:rgba(215, 30, 30, 0.912); font-size: 42px;"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100047619559868&mibextid=ZbWKwL"><i class="fa-brands fa-facebook" style="color: blue; font-size: 42px;"></i></a>
+            <a href="https://wa.me/qr/KN3BE56UMLD2L1"><i class="fa-brands fa-whatsapp" style="color: green; font-size: 42px;"></i></a>
+        </div>
+    </footer>
+</body>
+<script>
+    
+    document.addEventListener("DOMContentLoaded", function() {
+        // Get references to DOM elements
+        const searchButton = document.querySelector('.pick input[type="button"]');
+        const pickUpDate = document.querySelector('.pick label[for="location"] + p');
+        const returnDate = document.querySelector('.pick:nth-child(4) label[for="location"] + p');
+
+        // Function to handle search action
+        function searchCar() {
+            // Validate input (for example, you can check if the dates are valid)
+            const isValid = validateInput();
+            if (isValid) {
+                // Perform search action (you can redirect to another page or perform an AJAX request)
+                alert('Search Car with Pick Up Date: ' + pickUpDate.textContent + ' and Return Date: ' + returnDate.textContent);
+            } else {
+                alert('Please enter valid dates.');
+            }
+        }
+
+        // Function to validate user input
+        function validateInput() {
+            // Example validation: Check if dates are not empty
+            return pickUpDate.textContent.trim() !== '' && returnDate.textContent.trim() !== '';
+        }
+
+        // Attach click event listener to search button
+        searchButton.addEventListener('click', searchCar);
+    });
+</script>
+<script src="search.js"></script>
+
+
+</html>

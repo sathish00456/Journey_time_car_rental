@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s ease;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+
+        .car-details {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            width: 40%;
+            transition: background-color 0.3s ease; /* Added transition for smooth color change */
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 20px;
+            font-size: 1.5em;
+            background-color: #4caf50;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color:  #df390f;
+        }
+
+        .feature {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .feature img {
+            width: 30px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        /* Added a class for the div to change color on mouseover */
+        .change-color:hover {
+            background-color: #57920a; /* Change to the desired color */
+        }
+    </style>
+    <script>
+      function changeButtonColor() {
+          var button = document.getElementById('bookButton');
+          button.style.backgroundColor = '#ff8c00'; // Change to the desired color
+      }
+  </script>
+</head>
+<body>
+
+
+    <section>
+        <div class="car-details change-color">
+            <img src="c3.jpg" alt="Maruti Suzuki Swift">
+            <h1>MARUTI SUZUKI FRONX</h1>
+            <h2>One Day Rental: RS 7,000</h2>
+            <h2>Monthly Rental: RS 86,000</h2>
+            <a href="booking.html"><button id="bookButton" onclick="changeButtonColor()">BOOK NOW</button></a>
+        </div>
+
+        <div class="car-details change-color">
+            <div class="feature"><img src="manual.jpg" alt="Manual Transmission"> <h2>Manual,Automatic(AMT)</h2></div>
+            <div class="feature"><img src="seat.jpg" alt="4 Seater"> <h2>5 Seater</h2></div>
+            <div class="feature"><img src="desiel.jpg" alt="Diesel"> <h2>pertol,CNG</h2></div>
+            <div class="feature"><img src="baggegs.jpg" alt="2 Baggage"> <h2>2 Baggage</h2></div>
+        </div>
+    </section>
+ 
+</body>
+</html>

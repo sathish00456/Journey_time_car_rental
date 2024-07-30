@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Pay UPI Transaction</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Google Pay UPI Transaction</h1>
+    <!-- Use an anchor tag to create a link to initiate the UPI transaction -->
+    <a id="upi-payment-link" href="https://g.co/payinvite" target="_blank">Pay with UPI</a>
+  </div>
+
+  <script>
+    // Function to handle the button click event
+function onPayButtonClick() {
+  // Replace 'your_upi_id' with your actual UPI ID
+  const upiId = 'sathish20102003@oksbi';
+
+  // Generate the UPI payment link
+  const upiPaymentLink = `upi://pay?pa=${upiId}`;
+
+  // Redirect the user to the UPI payment app
+  window.open(upiPaymentLink, '_blank');
+}
+
+// Add click event listener to the UPI payment link
+document.getElementById('upi-payment-link').addEventListener('click', onPayButtonClick);
+
+  </script>
+</body>
+</html>
